@@ -33,22 +33,31 @@ export const useNotifyHook = () => {
   };
 
   const notifyUser = (message, isError = false) => {
+  
     // TODO: Dispatch action to enable notification message
+    
     clearNotification();
+    
   };
 
   return { notifyUser };
+  
 };
 
 # Component that gonna use the notify hook
 const MyComponent = () => {
+
   const { notifyUser } = useNotifyHook();
   
   const handleClick = () => {
+  
     notifyUser('React Hooks are amazing!')
+    
   };
   
   return (
+  
     <button onClick={handleClick }>Click here</button>
+    
   );
 };
