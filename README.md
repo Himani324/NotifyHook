@@ -21,10 +21,15 @@ When the user clicks the Save button on a form, send an API request to the back-
 const NOTIFY_TIME = 3000; // ms
 
 export const useNotifyHook = () => {
+
   const clearNotification = () => {
+  
     setTimeout(() => {
+    
       // TODO: Dispatch action to clear notification message
+      
     }, NOTIFY_TIME);
+    
   };
 
   const notifyUser = (message, isError = false) => {
